@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>المدونة الخاصة بالمهندس: عبدالغني معياد</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>أهلاً بكم في</h1>
+      <h2 class="name">المدونة الخاصة<br>بالمهندس: <span>عبدالغني معياد</span></h2>
+      <p class="lead">مدونة شخصية أنيقة وسهلة التحديث — أضف صور، روابط، فيديو أو نص على الواجهة مباشرةً.</p>
+
+      <div class="socials">
+        <a class="soc" href="https://api.whatsapp.com/send?phone=+967773716448" target="_blank" rel="noopener">
+          <span class="icon">🟢</span>
+          <span class="label">واتساب</span>
+        </a>
+        <a class="soc" href="https://www.facebook.com/share/183iM53LWq/" target="_blank" rel="noopener">
+          <span class="icon">📘</span>
+          <span class="label">فيسبوك</span>
+        </a>
+        <a class="soc" href="https://www.instagram.com/a_ill58?igsh=MXZ2YXR6ZWF0czlrNQ==" target="_blank" rel="noopener">
+          <span class="icon">📸</span>
+          <span class="label">إنستقرام</span>
+        </a>
+        <a class="soc" href="https://www.tiktok.com/@a_ill58?_t=ZS-90qf4AqjCWD&_r=1" target="_blank" rel="noopener">
+          <span class="icon">🎵</span>
+          <span class="label">تيكتوك</span>
+        </a>
+      </div>
+
+      <div class="actions">
+        <button id="openAdd">أضف محتوى جديد</button>
+        <button id="reset">إعادة تعيين (احذف الكل)</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h3>المحتوى المعروض</h3>
+    <div id="cards" class="cards"></div>
+  </main>
+
+  <!-- Add Content Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <h4>أضف محتوى للصفحة الرئيسية</h4>
+      <form id="addForm">
+        <label>العنوان
+          <input name="title" required />
+        </label>
+        <label>نوع المحتوى
+          <select name="type">
+            <option value="text">نص</option>
+            <option value="image">صورة (رابط)</option>
+            <option value="video">فيديو (تضمين رابط)</option>
+            <option value="link">رابط خارجي</option>
+          </select>
+        </label>
+        <label>المحتوى / رابط الصورة / رابط الفيديو
+          <input name="content" required />
+        </label>
+        <label>وصف مختصر (اختياري)
+          <input name="desc" />
+        </label>
+        <div class="modal-actions">
+          <button type="submit">إضافة</button>
+          <button type="button" id="close">إلغاء</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© كل الحقوق محفوظة للمهندس عبدالغني معياد</p>
+      <p class="hint">ملاحظة: يمكنك تعديل الملفات مباشرة (index.html، styles.css، script.js) ثم رفع المشروع مضغوطاً إلى خدمة الاستضافة التي تفضلها.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
